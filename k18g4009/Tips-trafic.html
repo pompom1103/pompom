@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>基本情報</title>
+    <link rel="stylesheet" href="small_screen.css" media="only screen and (min-width: 0px) and (max-width: 900px)">
+    <link rel="stylesheet" href="page.css" media="only screen and (min-width: 900px)">
+
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <script>
+        $(function() {
+            var headerHight = 100;
+            $('a[href^=#]').click(function() {
+                var href = $(this).attr("href");
+                var target = $(href == "#" || href == "" ? 'html' : href);
+                var position = target.offset().top - headerHight;
+                $("html, body").animate({
+                    scrollTop: position
+                }, 550, "swing");
+                return false;
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <img src="data/peru.gif" alt="ペルー国旗">
+            <h1>
+
+                <a href="index.html">ペルー旅行のすすめ</a>
+            </h1>
+
+            <nav class="gnav">
+                <ul>
+                    <li><a href="index.html">TOP</a></li>
+                    <li><a href="general-information.html">基本情報</a></li>
+                    <li class="current">基礎知識</li>
+                    <li><a href="city.html">主な都市</a></li>
+                </ul>
+            </nav>
+
+        </header>
+        <div class="main">
+            <div class="side-menu">
+                <table>
+                    <tr>
+                        <td class="page-topic"><a href="travel-tips.html">基礎知識</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="Tips-geo.html">地理と風土</a></td>
+                    </tr>
+                    <tr>
+                        <td class="current">交通</td>
+                    </tr>
+                    <tr>
+                        <td><a href="Tips-safety.html">安全</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="Tips-food.html">食事</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="Tips-spanish.html">スペイン語</a></td>
+                    </tr>
+                </table>
+
+            </div>
+            <div class="contents">
+                <h2 class="tipspage">交通</h2>
+                <h3>国内交通</h3>
+                <dt class="list">飛行機</dt>
+                <dd>ペルー国内はリマを起点に主要な都市のほとんどが空路で結ばれています。国内の航空会社はLATAM Airlines(LA)、ぺルビアン航空Peruvian Airlines、スターペルーStar Parúなどが運航しています。このほかに小さな航空会社が地方と地方を結ぶコミューター（小型機による地方航空路線）を運航しています。</dd>
+                <dt class="list">長距離バス</dt>
+                <dd>鉄道が発達していないペルーでは、長距離バスが重要な役割を果たします。特にリマを中心に各都市へ向かうバス路線は競合する会社も多く、充実しています。ペルーを代表するバス会社はクルス・デルスール社(Cruz del Sur)、オルトゥルサ社(Oltursa)やシバ社(Civa)、テプサ(Tepsa)がある。これらの会社は180度リクライニングシートや食事のサービス、Wi-fi、トイレ完備のデラックスな新型バスを所有しており、信頼度も高いです。他にも多くのバス会社があり、同一区間でも運行会社やシートタイプ、運行時間によって運賃は大きく異なります。走行距離が長くパンアメリカン・ハイウェイ（南北アメリカ大陸の国々を結ぶ幹線道路網）以外の道路事情は悪いため、ただ安いからだけではなく慎重に選んだほうが良いでしょう。アンデスが雨季となる11～4月には、崖崩れや道路の水没などの交通トラブルも多いため、そんなときには飛行機も選択肢に入れる必要があります。</dd>
+                <dt class="list">鉄道</dt>
+                <dd><span class="important">①クスコ~マチュピチュ</span><br>クスコ近郊のポロイ駅からオリャンタイタンボ駅を経由して、マチュピチュ駅までの間を列車が運行しています。列車はポロイ駅とオリャンタイタンボ駅の両方から乗ることができますが、オリャンタイタンボ~マチュピチュ間は電車でしか移動できません。現在、ペルーレイル社(PeruRail)とインカ・レイル(Inca Rail)の2社が運航しています。運航便数が最も多く、両駅に発着するペルーレイルの列車は、豪華なハイラム・ビンガム、一般的なビスタドーム、エコノミーなエクスペディションの大きく分けて3つがあります。<div class="link"><a href="City-machupicchu.html#go-machupicchu">→マチュピチュへの行き方</a></div>
+                    <br><span class="important">②クスコ~プーノ</span><br>
+                    豪華寝台列車ベルモント・アンデアン・エクスプローラーがクスコ~プーノ間を運行している。1泊2日の寝台列車のツアーで、クスコ（ワンチャック駅）発木曜11：00、プーノ（ティティカカ駅）着22：30。列車内で1泊して、翌日の8時に下車する。全食事付き、列車内で各種エンターテインメントが催される。プーノ発は水曜12：00、クスコ着木曜7：35。クスコ~プーノ~アレキパの2泊3日のツアーもあります。
+                </dd>
+                <h3>市内交通</h3>
+                <dt class="list">タクシー</dt>
+                <dd>リマやクスコ、アレキパといった都市部では、タクシーアプリが主流です。料金も明確で安全性が高いとして、流しのタクシーより人気があります。リマで人気なのはUber、Taxibeat、Cabifyなどで、クスコではEasy Taxiなど。流しのタクシーにはメーターはなく事前交渉制で、乗る前に行先を告げて料金を交渉してから乗ります。ホテルなどで目安を聞いておくといいでしょう。</dd>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer_contents">
+                <div class="link1">
+                    <p class="f_link"><a class="f_link" href="https://www.perurail.com/" target="_blank">PeruRail.com</a>
+                        <br>photo by Unsplash <br>作成者：K18G4009 井上文花
+                    </p>
+                </div>
+                <div class="link2"><a href="https://unsplash.com/" target="_blank"><img src="data/Unsplash_Logo_Full.png" alt="アンスプラッシュ"></a>
+                </div>
+                <div class="link3"><a href="https://www.arukikata.co.jp/" target="_blank"><img src="https://www.arukikata.co.jp/img/banner_m_a.gif" alt="地球の歩き方" width="230" height="60"></a></div>
+            </div>
+
+        </footer>
+    </div>
+</body></html>

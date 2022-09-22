@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>ペルー旅行のすすめ</title>
+    <meta name="author" content="Ayaka Inoue">
+    <link rel="stylesheet" href="small_screen.css" media="only screen and (min-width: 0px) and (max-width: 900px)">
+    <link rel="stylesheet" href="page.css" media="only screen and (min-width: 900px)">
+
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <script>
+        $(function() {
+            var headerHight = 100;
+            $('a[href^=#]').click(function() {
+                var href = $(this).attr("href");
+                var target = $(href == "#" || href == "" ? 'html' : href);
+                var position = target.offset().top - headerHight;
+                $("html, body").animate({
+                    scrollTop: position
+                }, 550, "swing");
+                return false;
+            });
+        });
+
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <img src="data/peru.gif" alt="ペルー国旗">
+        <h1>
+
+            <a href="index.html">ペルー旅行のすすめ</a>
+        </h1>
+        <nav class="gnav">
+            <ul>
+                <li class="current">TOP</li>
+                <li><a href="general-information.html">基本情報</a></li>
+                <li><a href="travel-tips.html">基礎知識</a></li>
+                <li><a href="city.html">主な都市</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <div class="machu-picchu">
+        <p class="catch-copy">あなたの知らない地球の裏側、行ってみませんか?</p>
+        <p class="concept">ペルーという国を知っていますか？<br>
+            ペルー共和国は日本から遠く離れた地球の裏側にある国です。<br>
+            アンデス高地や海岸地域に古くから文明が栄えたこの国は、マチュピチュをはじめとする遺跡の宝庫です。<br>そして多彩な自然環境にも恵まれており、一度は行って見てみたい美しい景色が広がっています。<br>このサイトでは、そんなペルーの溢れる魅力をご紹介します。
+        </p>
+
+    </div>
+</body>
+
+</html>

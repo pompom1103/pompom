@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>主な都市</title>
+    <link rel="stylesheet" href="small_screen.css" media="only screen and (min-width: 0px) and (max-width: 900px)">
+    <link rel="stylesheet" href="page.css" media="only screen and (min-width: 900px)">
+
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <script>
+        $(function() {
+            var headerHight = 100;
+            $('a[href^=#]').click(function() {
+                var href = $(this).attr("href");
+                var target = $(href == "#" || href == "" ? 'html' : href);
+                var position = target.offset().top - headerHight;
+                $("html, body").animate({
+                    scrollTop: position
+                }, 550, "swing");
+                return false;
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <img src="data/peru.gif" alt="ペルー国旗">
+            <h1>
+                <a href="index.html">ペルー旅行のすすめ</a>
+            </h1>
+            <nav class="gnav">
+                <ul>
+                    <li><a href="index.html">TOP</a></li>
+                    <li><a href="general-information.html">基本情報</a></li>
+                    <li><a href="travel-tips.html">基礎知識</a></li>
+                    <li class="current">主な都市</li>
+                </ul>
+            </nav>
+
+        </header>
+        <div class="main">
+            <div class="side-menu">
+                <table>
+                    <tr>
+                        <td class="page-topic"><a href="city.html">ペルーの主な都市</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="City-lima.html">リマ</a></td>
+                    </tr>
+                    <tr>
+                        <td class="current">クスコ</td>
+                    </tr>
+                    <tr>
+                        <td><a href="City-nasca.html">ナスカ</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="City-machupicchu.html">マチュピチュ</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="City-puno.html">プーノ</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="City-iquitos.html">イキトス</a></td>
+                    </tr>
+
+                </table>
+            </div>
+            <div class="contents">
+
+                <h2 class="citypage">
+                    <span>Cusco ― 標高3399m</span>
+                    クスコ
+                </h2>
+                <p>クスコは昔、太陽神を崇拝するインカ帝国の首都でした。「クスコ」とはケチュア語で“ヘソ”を意味しており、これは大インカ帝国を築いた人々にとってクスコは、彼らの世界観の中心であったことを表しています。16世紀、ピサロ率いるスペイン人の征服者たちはインカの人々は山奥に追いやり、インカの人々が暮らしていた礎石の上に教会や邸宅を立てました。これがクスコの町に不思議なコントラストをつくり、建築様式を含む文化的価値が認められ、1983年にクスコは世界遺産に登録されました。クスコの郊外にはマチュピチュをはじめとしたインカ時代の建造物が多く残ります。大昔に滅んだとされるインカ文明ですが、毎年6月には南米三大祭りの1つであり、インカ時代の儀式を再現した“インティ・ライミ=太陽の祭り”が開かれ、クスコの住民はインカの民となって神聖な儀式に参加します。
+                </p>
+                <p class="map"><iframe src="https://www.google.com/maps/d/u/0/embed?mid=1cvmyAavnrgkv6UzMVQTOJ15ec7V4sSmR" width="640" height="480"></iframe></p>
+                <h3>クスコへの行き方</h3>
+                <h4>飛行機</h4>
+                <p>リマからのフライトになります。出発時間は5：00～13：00ぐらいに集中しています。また、山岳地帯のため天候によるキャンセルや遅れが多いので、スケジュールは余裕をもった方がよいでしょう。リマ以外の国内線はラタム航空とペルビアンがアレキパから、プエルト・マルドナードからはラタム航空とスターペルーが、フリアカからもラタム航空のフライトがある。ボリビアのラパス間はラタム航空とアマゾナス航空が結んでおり、いずれも1日1便で所要時間は約1時間です。</p>
+                <h4>長距離バス</h4>
+                <p>最も一般的なバス路線は、リマからイカ、ナスカ、アバンカイを経由してクスコに至るルートです。毎日シバ社が5便、クルス・デル・スールが2便あり、いずれも午後出発です。直行便ではありませんが、リマからアレキパ、アレキパからクスコに行くこともできます。クスコ～プーノ間を観光できるバス、インカ・エクスプレスInka Expressもあり、クスコ、プーノともに6：40出発、17：00到着です。</p>
+                <p class="fee"><span class="fee-title">所要時間と料金</span><br><span>リマ～ナスカ（直行便）</span>　所要時間：約21時間30分　料金：S/80～185<br><span>リマ～アレキパ</span>　所要時間：15時間30分～18時間　料金：S/49～185<br><span>アレキパ～クスコ</span>　所要時間：10時間～11時間30分　料金：S/29～140<br><span>プーノ～クスコ</span>　所要時間：約6時間30分　料金：S/40～130<span class="right">(1ソル=約30円)</span>
+                </p>
+                <h4>鉄道</h4>
+                <p>クスコ～プーノ、クスコ～マチュピチュ間は列車が運行しています。<br>クスコとマチュピチュを結ぶ列車は、クスコ近郊のポロイ駅Estación Poroyを発着。ペルーレイルが毎日4便、インカ・レイルが1便あります。ポロイ駅へはクスコから車で15分ほどで、タクシーならS/20程度です。<br>クスコ～プーノ間はペルーレイルが所有する高級寝台列車のベルモンド・アンデアン・エクスプローラーBelmond Andean Explorerが運行しています。この列車はクスコ～プーノを1泊2日で楽しむ旅ができ、さらに2泊3日でアレキパまで行くプランもあります。</p>
+                <h3>クスコの見どころ</h3>
+                <h4>ウルバンバ　Urbamba</h4>
+                <p>ウルバンバ渓谷はクスコから北西に約80km、コレクティーボと呼ばれる市内バスで1時間半弱の場所にあります。クスコに比べて標高が低く（2871m）、年間を通して穏やかな気候のため、果物が栽培され、特に雨季の終わりごろには色とりどりの花が咲き乱れます。クスコ市民にとってウルバンバは保養地であり、テニスコート、サッカー場などを備えたTambo del Inkaをはじめ、プール付きペンションなどの宿泊施設もあります。また、キンタ・レストランという、地元の料理をビュッフェ形式で味わえるオープンエアのレストランも何軒かあります。マチュピチュのツアーでは、ウルバンバや周辺のホテルに宿泊することが多いです。</p>
+                <h4>ビニクンカ　Vinicunca</h4>
+                <p>ビニクンカは近年地球温暖化により氷が溶けて現れた新しい観光地で、赤・茶・青・白の鮮やかな配色が山肌に連なる光景が話題となり、近年知名度が上がっています。ナショナル・ジオグラフィック誌でも「死ぬまでに訪れるべき100箇所」に選定されました。ビニクンカとはケチュア語で”7色の山”を意味しており、レインボーマウンテン(Rainbow Mountain)と呼ばれています。クスコから約140km南東、車で3時間半の場所に位置しており、レインボーマウンテンが見下ろせる標高5029mのビニクンカ(Vinicunca)までは、片道1時間半の登山になります。訪れるにはクスコ市内の数多くの代理店が扱っているツアーに参加することが一般的です。ツアーはクスコを5：00発、戻りは19：00、朝食と昼食付きで$40ほどです。</p>
+                <p class="picture"><img src="data/vinicunca.png" alt="レインボーマウンテン"></p>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer_contents">
+                <div class="link1">
+                    <p class="f_link"><a class="f_link" href="https://www.perurail.com/" target="_blank">PeruRail.com</a>
+                        <br>photo by Unsplash <br>作成者：K18G4009 井上文花
+                    </p>
+                </div>
+                <div class="link2"><a href="https://unsplash.com/" target="_blank"><img src="data/Unsplash_Logo_Full.png" alt="アンスプラッシュ"></a>
+                </div>
+                <div class="link3"><a href="https://www.arukikata.co.jp/" target="_blank"><img src="https://www.arukikata.co.jp/img/banner_m_a.gif" alt="地球の歩き方" width="230" height="60"></a></div>
+            </div>
+
+        </footer>
+    </div>
+</body>

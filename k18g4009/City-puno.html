@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>主な都市</title>
+    <link rel="stylesheet" href="small_screen.css" media="only screen and (min-width: 0px) and (max-width: 900px)">
+    <link rel="stylesheet" href="page.css" media="only screen and (min-width: 900px)">
+
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <script>
+        $(function() {
+            var headerHight = 100;
+            $('a[href^=#]').click(function() {
+                var href = $(this).attr("href");
+                var target = $(href == "#" || href == "" ? 'html' : href);
+                var position = target.offset().top - headerHight;
+                $("html, body").animate({
+                    scrollTop: position
+                }, 550, "swing");
+                return false;
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <img src="data/peru.gif" alt="ペルー国旗">
+            <h1>
+                <a href="index.html">ペルー旅行のすすめ</a>
+            </h1>
+            <nav class="gnav">
+                <ul>
+                    <li><a href="index.html">TOP</a></li>
+                    <li><a href="general-information.html">基本情報</a></li>
+                    <li><a href="travel-tips.html">基礎知識</a></li>
+                    <li class="current">主な都市</li>
+                </ul>
+            </nav>
+
+        </header>
+        <div class="main">
+            <div class="side-menu">
+                <table>
+                    <tr>
+                        <td class="page-topic"><a href="city.html">ペルーの主な都市</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="City-lima.html">リマ</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="City-cusco.html">クスコ</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="City-nasca.html">ナスカ</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="City-machupicchu.html">マチュピチュ</a></td>
+                    </tr>
+                    <tr>
+                        <td class="current">プーノ</td>
+                    </tr>
+                    <tr>
+                        <td><a href="City-iquitos.html">イキトス</a></td>
+                    </tr>
+
+                </table>
+            </div>
+            <div class="contents">
+
+                <h2 class="citypage">
+                    <span>Puno ― 標高約3827m</span>
+                    プーノ
+                </h2>
+                <p>プーノはペルー南部、アンデス山脈のほぼ中央に位置する標高3827mの小さな町です。標高3827mとは富士山やクスコ、世界一標高の高い首都である隣国ボリビアのラパスよりも高い場所です。季節は雨季と乾季に分けられ、10～4月頃の雨季には道が水没することもあります。標高が高いため温度差が極端で、6～8月の乾季には、日中は日焼け止めが必要になるほど日差しが強いのに、夜になると厚手のセーターが必要になるほど気温が下がります。プーノは汽船の航行する湖では世界で最も高地にあるとともに、インカ文明発祥の地といわれているティティカカ湖に接し、山に挟まれた土地に広がっています。インカ帝国時代のプーノは天神降臨の地のひとつとして重要な役割を果たしていましたが、スペイン軍による征服によって先住民たちはプーノを追いやられ、山奥や湖上の浮き島に移り住みました。やがて再び先住民たちは戻ってきて、現在のプーノではインディヘナの人々が人口の大きな割合を占めます。プーノではいたるところで色鮮やかな民族衣装に身を包んだ人々の姿を目にすることができ、年に1度フォルクローレと呼ばれる伝統音楽の祭典であるカンデラリア祭(Fiesta de la Candelaria)も行われています。
+                </p>
+                <p class="map"><iframe src="https://www.google.com/maps/d/u/0/embed?mid=1Y642KkcYovAideEeyPDNOdY3nu4cU3uf" width="640" height="480"></iframe></p>
+                <h3>プーノへの行き方</h3>
+                <ul>
+                    <li class="list">飛行機</li>
+                    <p>リマからフリアカへのフライトとなります。最寄りの空港はプーノから47㎞北にあるフリアカのフリアカ空港Aeropuerto Juliaca(JUL)。クスコからもラタム航空LATAM Airlines(LA)が1日1便運航しており、所要時間は約55分です。</p>
+                    <p>空港からプーノ市内へは乗り合いのツーリストバスでS/15、タクシーならS/80～120、所要時間は約1時間です。ツーリストバスはロシー・ツアーズRossy Toursが運行しており、事前予約することでホテルまで迎えに来てくれて、市内のホテルからは1人S/15です。
+                    </p>
+                    <li>鉄道</li>
+                    <p>クスコからプーノへ、豪華寝台列車アンデアン・エクスプローラーが運行しています。移動にも利用できますが、全食事付き、列車内で寝泊まりするツアー型のプランになります。最大乗客48名、ダイニング車両やラウンジ車両、スパ車両があり、料金には飲食も含まれます。</p>
+                    <p class="fee"><span class="fee-title">料金</span><br><span>クスコ～プーノ</span>　1人US$990～　2人1室US＄1130～ <br><span>クスコ～アレキパ</span>　1人US＄2520～　2人1室US＄2880～</p>
+                    <li>長距離バス</li>
+                    <p>クスコからは所要時間5～8時間、S/30～。1時間に1便程度ありますが、クルス・デル・スールなど大手の設備が整った便は早朝と深夜がほとんどで、あまり設備のよくない便が多いです。インカ・エクスプレスの運行する観光バスは、US＄50で昼食と英語ガイド付き。毎朝クスコのオフィス前を6：40に発車し、所要時間は約10時間です。</p>
+                </ul>
+                <h3>プーノの見どころ</h3>
+                <h4>ティティカカ湖　LagoTiticaca</h4>
+                <p>その昔、インカの初代皇帝が妹とともに現れ、太陽の島に降り立ったという伝説の残る湖です。アンデス山脈のほぼ中央、海抜3,890mに位置しており、面積は8,300㎢（琵琶湖の約12倍）、最大水深は281mです。ペルーとボリビアの国境にあり、60％がペルー、40％がボリビアに位置しています。標高3,890mは汽船の航行する世界最高地点でもあります。アンデス山脈からの雪解け水が20以上もの川となって湖に流れ込み、水温は低いですが魚は多く生息し、なかでもトゥルチャTrucha（マス）は湖畔に住む人々の重要な食料になっています。<br>古代から神秘の湖とあがめられていたティティカカ湖周辺には、ティナ和久遺跡、シユスタニ遺跡など、プレ・インカ文明の遺跡が残されています。</p>
+                <h4>ウロス島　Isla de Los Uros</h4>
+                <p>プーノの桟橋からモーターボートで約40分の場所にあるウロス島はトトラと呼ばれる水生生物を積み重ねた“浮き島”で、群生するトトラのなかに大小合わせて40ほどの島が浮いています。島は6畳ほどの大きさのものから350人が生活するものまで様々です。合わせて約700人が生活しており、大きな島には学校や教会もあります。島民はウル族と呼ばれ、トゥルチャなどのティティカカ湖に生息する魚や水鳥を取り、畑で野菜を育てて生活しています。家はもちろん畑や家畜のえさにもトトラが使われています。また、島と島を結ぶ唯一の交通手段となる舟もトトラで作られており、この舟はバルサと呼ばれています。バルサは結構しっかりしているので、大人が15人乗っても沈みません。</p>
+                <p class="picture"><img src="data/Puno-titicaca_lake.png" alt="プーノのチチカカ湖"></p>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer_contents">
+                <div class="link1">
+                    <p class="f_link"><a class="f_link" href="https://www.perurail.com/" target="_blank">PeruRail.com</a>
+                        <br>photo by Unsplash <br>作成者：K18G4009 井上文花
+                    </p>
+                </div>
+                <div class="link2"><a href="https://unsplash.com/" target="_blank"><img src="data/Unsplash_Logo_Full.png" alt="アンスプラッシュ"></a>
+                </div>
+                <div class="link3"><a href="https://www.arukikata.co.jp/" target="_blank"><img src="https://www.arukikata.co.jp/img/banner_m_a.gif" alt="地球の歩き方" width="230" height="60"></a></div>
+            </div>
+
+        </footer>
+    </div>
+</body>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>主な都市</title>
+    <link rel="stylesheet" href="small_screen.css" media="only screen and (min-width: 0px) and (max-width: 900px)">
+    <link rel="stylesheet" href="page.css" media="only screen and (min-width: 900px)">
+
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <script>
+        $(function() {
+            var headerHight = 100;
+            $('a[href^=#]').click(function() {
+                var href = $(this).attr("href");
+                var target = $(href == "#" || href == "" ? 'html' : href);
+                var position = target.offset().top - headerHight;
+                $("html, body").animate({
+                    scrollTop: position
+                }, 550, "swing");
+                return false;
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <img src="data/peru.gif" alt="ペルー国旗">
+            <h1>
+                <a href="index.html">ペルー旅行のすすめ</a>
+            </h1>
+            <nav class="gnav">
+                <ul>
+                    <li><a href="index.html">TOP</a></li>
+                    <li><a href="general-information.html">基本情報</a></li>
+                    <li><a href="travel-tips.html">基礎知識</a></li>
+                    <li class="current">主な都市</li>
+                </ul>
+            </nav>
+
+        </header>
+        <div class="main">
+            <div class="side-menu">
+                <table>
+                    <tr>
+                        <td class="page-topic"><a href="city.html">ペルーの主な都市</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="City-lima.html">リマ</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="City-cusco.html">クスコ</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="City-nasca.html">ナスカ</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="City-machupicchu.html">マチュピチュ</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="City-puno.html">プーノ</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="City-iquitos.html">イキトス</a></td>
+                    </tr>
+
+                </table>
+            </div>
+            <div class="contents">
+                <h2 class="topicpage">ペルーの主な都市</h2>
+                <p>ペルーには24の県と1つの特別区があり、そこからたくさんの都市に分かれます。<br>主要な都市のいくつかをこれから詳しく紹介していきます。</p>
+                <p class="map"><iframe src="https://www.google.com/maps/d/u/0/embed?mid=1pPiE0DPmoqysj1Pn3orOC7mRzeVqyD-5" width="640" height="480"></iframe></p>
+                <h3>ペルー10大都市</h3>
+                <p>ペルー中でも人口の多い大きな都市10都市のランキングです。<br>首都リマは2位以下の都市と比べて圧倒的に人口が多く、ペルーの総人口の約3分の1が集中しています。
+                </p>
+
+                <table class="city-pop">
+                    <thead>
+                        <tr>
+
+                            <th class="city-th">都市</th>
+                            <th class="pop-th">人口（2020年）</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="city-rank"><a href="City-lima.html">リマ Lima</a></td>
+                            <td class="pop">1,079万人</td>
+                        </tr>
+                        <tr>
+                            <td class="city-rank">　アレキパ Arequipa</td>
+                            <td class="pop">108万人</td>
+                        </tr>
+                        <tr>
+                            <td class="city-rank">　トルヒーリョ Trujillo</td>
+                            <td class="pop">98万人</td>
+                        <tr>
+                            <td class="city-rank">　チクラーヨ Chiclayo</td>
+                            <td class="pop">65万人</td>
+                        </tr>
+                        <tr>
+                            <td class="city-rank">　ピウラ Piura</td>
+                            <td class="pop">52万人</td>
+                        <tr>
+                            <td class="city-rank"><a href="City-cusco.html">クスコ Cusco</a></td>
+                            <td class="pop">47万人</td>
+                        <tr>
+                            <td class="city-rank">　ワンカヨ Huancayo</td>
+                            <td class="pop">44万人</td>
+                        <tr>
+                            <td class="city-rank"><a href="City-iquitos.html">イキトス iquitos</a></td>
+                            <td class="pop">42万人</td>
+                        <tr>
+                            <td class="city-rank">　チンボテ Chimbote</td>
+                            <td class="pop">38万人</td>
+                        <tr>
+                            <td class="city-rank">　プカルバ Pucallpa</td>
+                            <td class="pop">38万人</td>
+                    </tbody>
+                </table>
+
+
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer_contents">
+                <div class="link1">
+                    <p class="f_link"><a class="f_link" href="https://www.perurail.com/" target="_blank">PeruRail.com</a>
+                        <br>photo by Unsplash <br>作成者：K18G4009 井上文花
+                    </p>
+                </div>
+                <div class="link2"><a href="https://unsplash.com/" target="_blank"><img src="data/Unsplash_Logo_Full.png" alt="アンスプラッシュ"></a>
+                </div>
+                <div class="link3"><a href="https://www.arukikata.co.jp/" target="_blank"><img src="https://www.arukikata.co.jp/img/banner_m_a.gif" alt="地球の歩き方" width="230" height="60"></a></div>
+            </div>
+
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>基本情報</title>
+    <link rel="stylesheet" href="small_screen.css" media="only screen and (min-width: 0px) and (max-width: 900px)">
+    <link rel="stylesheet" href="page.css" media="only screen and (min-width: 900px)">
+
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <script>
+        $(function() {
+            var headerHight = 100;
+            $('a[href^=#]').click(function() {
+                var href = $(this).attr("href");
+                var target = $(href == "#" || href == "" ? 'html' : href);
+                var position = target.offset().top - headerHight;
+                $("html, body").animate({
+                    scrollTop: position
+                }, 550, "swing");
+                return false;
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <img src="data/peru.gif" alt="ペルー国旗">
+            <h1>
+
+                <a href="index.html">ペルー旅行のすすめ</a>
+            </h1>
+
+            <nav class="gnav">
+                <ul>
+                    <li><a href="index.html">TOP</a></li>
+                    <li><a href="general-information.html">基本情報</a></li>
+                    <li class="current">基礎知識</li>
+                    <li><a href="city.html">主な都市</a></li>
+                </ul>
+            </nav>
+
+        </header>
+        <div class="main">
+            <div class="side-menu">
+                <table>
+                    <tr>
+                        <td class="page-topic"><a href="travel-tips.html">基礎知識</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="Tips-geo.html">地理と風土</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="Tips-trafic.html">交通</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="Tips-safety.html">安全</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="Tips-food.html">食事</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="Tips-spanish.html">スペイン語</a></td>
+                    </tr>
+                </table>
+
+            </div>
+            <div class="contents">
+                <h2 id="topic" class="topicpage">基礎知識</h2>
+                <p>知っておくことでペルー旅行がより楽しめる、ペルーの食事事情や安全面などの基礎知識を紹介していきます。</p>
+                <p class="picture"><img src="data/alpacas.png" alt="アルパカたち"></p>
+
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer_contents">
+                <div class="link1">
+                    <p class="f_link"><a class="f_link" href="https://www.perurail.com/" target="_blank">PeruRail.com</a>
+                        <br>photo by Unsplash <br>作成者：K18G4009 井上文花
+                    </p>
+                </div>
+                <div class="link2"><a href="https://unsplash.com/" target="_blank"><img src="data/Unsplash_Logo_Full.png" alt="アンスプラッシュ"></a>
+                </div>
+                <div class="link3"><a href="https://www.arukikata.co.jp/" target="_blank"><img src="https://www.arukikata.co.jp/img/banner_m_a.gif" alt="地球の歩き方" width="230" height="60"></a></div>
+            </div>
+
+        </footer>
+    </div>
+</body></html>

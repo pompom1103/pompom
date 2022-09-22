@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>基本情報</title>
+    <link rel="stylesheet" href="small_screen.css" media="only screen and (min-width: 0px) and (max-width: 900px)">
+    <link rel="stylesheet" href="page.css" media="only screen and (min-width: 900px)">
+
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <script>
+        $(function() {
+            var headerHight = 100;
+            $('a[href^=#]').click(function() {
+                var href = $(this).attr("href");
+                var target = $(href == "#" || href == "" ? 'html' : href);
+                var position = target.offset().top - headerHight;
+                $("html, body").animate({
+                    scrollTop: position
+                }, 550, "swing");
+                return false;
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <img src="data/peru.gif" alt="ペルー国旗">
+            <h1>
+
+                <a href="index.html">ペルー旅行のすすめ</a>
+            </h1>
+
+            <nav class="gnav">
+                <ul>
+                    <li><a href="index.html">TOP</a></li>
+                    <li><a href="general-information.html">基本情報</a></li>
+                    <li class="current">基礎知識</li>
+                    <li><a href="city.html">主な都市</a></li>
+                </ul>
+            </nav>
+
+        </header>
+        <div class="main">
+            <div class="side-menu">
+                <table>
+                    <tr>
+                        <td class="page-topic"><a href="travel-tips.html">基礎知識</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="Tips-geo.html">地理と風土</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="Tips-trafic.html">交通</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="Tips-safety.html">安全</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="Tips-food.html">食事</a></td>
+                    </tr>
+                    <tr>
+                        <td class="current">スペイン語</td>
+                    </tr>
+                </table>
+
+            </div>
+            <div class="contents">
+                <h2 class="tipspage">スペイン語</h2>
+                <p>山岳地域のインディヘナはケチュア語、ティティカカ湖周辺はアイマラ語を話しますが、ペルー全体的にはスペイン語が話されています。また、南米ではほとんどの国がスペイン語を公用語としており、スペイン語を母国語として話す人は中国語と英語に続いて世界で3番目に多く、スペイン語が話せることでより多様な地域の人々とコミュニケーションをとることができます。</p>
+                <h3 class="tipspage3">ペルーで使えるスペイン語</h3>
+                <p>覚えておくと便利なスペイン語のフレーズをいくつかご紹介します。</p>
+                <ol class="spanish">
+                    <li>おはようございます。</li>
+                    <p><ruby>Buenos<rt>ブエノス</rt>　días.　<rt>ディアス</rt></ruby></p>
+                    <li>こんばんは。</li>
+                    <p><ruby>Buenas<rt>ブエナス</rt>　noches.　<rt>ノチェス</rt></ruby></p>
+                    <li>やあ、元気？ / とても元気です、ありがとう。</li>
+                    <p><ruby>¡Hola!<rt>オラ</rt>　¿Cómo　<rt>コモ</rt>estás? <rt>エスタス</rt></ruby> / <ruby>Muy<rt>ムイ</rt>　bien,　<rt>ビエン</rt>Gracias.<rt>グラシアス</rt></ruby></p>
+                    <li>私は日本人です。</li>
+                    <p><ruby>Soy<rt>ソイ</rt> 　japonesa.<rt>ハポネサ</rt></ruby>（自分が女性の場合）　<ruby>Soy<rt>ソイ</rt> 　japonés.<rt>ハポネス</rt></ruby>（自分が男性の場合）</p>
+                    <li>私は東京に住んでいます。</li>
+                    <p><ruby>Vivo<rt>ビボ</rt>　en　<rt>エン</rt>Tokio.<rt>トキョ</rt></ruby></p>
+
+                    <li>これはなんですか？</li>
+                    <p><ruby>¿Qué<rt>ケ</rt>　es　<rt>エス</rt>esto? <rt>エスト</rt></ruby></p>
+                    <li>これはスペイン語で何と言いますか？</li>
+                    <p><ruby>¿Cómo<rt>コモ</rt>　se　<rt>セ</rt>dice <rt>ディセ</rt>　esto　<rt>エスト</rt> en <rt>エン</rt>　español?<rt>エスパニョル</rt></ruby></p>
+                    <li>全部でいくらですか？/全部で80ユーロです。</li>
+                    <p><ruby>¿Cuánto<rt>クアント</rt>　es　<rt>エス</rt>todo? <rt>トド</rt></ruby> / <ruby>En<rt>エン</rt>　total　<rt>トタル</rt>son<rt>ソン</rt>　ochenta　<rt>オチェンタ</rt> euros.<rt>エウロス</rt></ruby></p>
+
+                    <li>食べることは好きですか？/もちろん、大好きです！</li>
+                    <p><ruby>¿Le<rt>レ</rt>　gusta　<rt>グスタ</rt>comer? <rt>コメル</rt></ruby> / <ruby>¡Claro,<rt>クラロ</rt>　me　<rt>メ</rt>encanta!<rt>エンカンタ</rt></ruby></p>
+                    <li>すみません、ちょっとお尋ねします。トイレはどこですか？</li>
+                    <p><ruby>Disculpe,<rt>ディスクルペ</rt>　una　<rt>ウナ</rt>pregunta. <rt>プレグンタ</rt>　¿Donde<rt>ドンデ</rt>　está　<rt>エスタ</rt>el<rt>エル</rt>baño?<rt>バニョ</rt></ruby></p>
+                </ol>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer_contents">
+                <div class="link1">
+                    <p class="f_link"><a class="f_link" href="https://www.perurail.com/" target="_blank">PeruRail.com</a>
+                        <br>photo by Unsplash <br>作成者：K18G4009 井上文花
+                    </p>
+                </div>
+                <div class="link2"><a href="https://unsplash.com/" target="_blank"><img src="data/Unsplash_Logo_Full.png" alt="アンスプラッシュ"></a>
+                </div>
+                <div class="link3"><a href="https://www.arukikata.co.jp/" target="_blank"><img src="https://www.arukikata.co.jp/img/banner_m_a.gif" alt="地球の歩き方" width="230" height="60"></a></div>
+            </div>
+
+        </footer>
+    </div>
+</body></html>

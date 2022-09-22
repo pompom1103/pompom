@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>主な都市</title>
+    <link rel="stylesheet" href="small_screen.css" media="only screen and (min-width: 0px) and (max-width: 900px)">
+    <link rel="stylesheet" href="page.css" media="only screen and (min-width: 900px)">
+
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <script>
+        $(function() {
+            var headerHight = 100;
+            $('a[href^=#]').click(function() {
+                var href = $(this).attr("href");
+                var target = $(href == "#" || href == "" ? 'html' : href);
+                var position = target.offset().top - headerHight;
+                $("html, body").animate({
+                    scrollTop: position
+                }, 550, "swing");
+                return false;
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <img src="data/peru.gif" alt="ペルー国旗">
+            <h1>
+                <a href="index.html">ペルー旅行のすすめ</a>
+            </h1>
+            <nav class="gnav">
+                <ul>
+                    <li><a href="index.html">TOP</a></li>
+                    <li><a href="general-information.html">基本情報</a></li>
+                    <li><a href="travel-tips.html">基礎知識</a></li>
+                    <li class="current">主な都市</li>
+                </ul>
+            </nav>
+
+        </header>
+        <div class="main">
+            <div class="side-menu">
+                <table>
+                    <tr>
+                        <td class="page-topic"><a href="city.html">ペルーの主な都市</a></td>
+                    </tr>
+                    <tr>
+                        <td class="current">リマ</td>
+                    </tr>
+                    <tr>
+                        <td><a href="City-cusco.html">クスコ</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="City-nasca.html">ナスカ</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="City-machupicchu.html">マチュピチュ</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="City-puno.html">プーノ</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="City-iquitos.html">イキトス</a></td>
+                    </tr>
+
+                </table>
+            </div>
+            <div class="contents">
+
+                <h2 class="citypage">
+                    <span>Lima ― 標高154m</span>
+                    リマ
+                </h2>
+                <p>ペルー共和国の首都であるリマは、ペルーの総人口の3分の1近くが集中しており、ブラジルのリオ・デ・ジャネイロやサン・パウロと並ぶ南米大陸有数の大都市でもあります。そのため毎日アメリカやヨーロッパから何十便もの飛行機が、ホルヘ・チャペス国際空港に到着します。リマはチャラと呼ばれる海岸砂漠地帯に位置し、年間を通してほとんど雨が降ることはなく、5月にほんのわずか"インカの涙"と呼ばれる霧雨があるだけです。また、ペルーは南半球に属しているため日本とは季節が真逆となり、ペルーの7～8月は冬となるのですが、その冬の間はガルーア（garúa）という霧が空を覆い、どんよりとした曇天の日が続きます。 旧市街、リマ区（セントロ）の古い町並みは、1988～1991年にユネスコの世界文化遺産に登録されています。 かつてリマの中心だった旧市街ですが、近年は治安の悪さなどからオフィスが集まる中心地は新市街に移っています。</p>
+                <div class="map"><iframe src="https://www.google.com/maps/d/u/0/embed?mid=1VFRUN1OKXx7_i3URCLH2p-oJvKcNEyhG" width="640" height="480"></iframe></div>
+                <h3>リマの見どころ</h3>
+                <h4>旧市街―セントロ　Centro</h4>
+                <ul class="topnashi">
+                    <li class="list">アルマス広場 Plaza de Armas</li>
+                    <p>1535年、内陸のハウハから250km離れたリマへ首都を移すと決めたフランシスコ・ピサロは、スペインのイベリア様式にのっとり、アルマス広場を中心に町を築いていきました。現在もアルマス広場は旧市街の中心地で、広場を取り囲むように古い建物が残っています。北東に大統領官邸、北西にはリマ市庁舎があるため、周辺の警備は厳重です。</p>
+                    <li class="list">カテドラル Catedral</li>
+                    <p>町の中心となる広場の正面にカテドラルが堂々とそびえている風景は、南米のどの都市でも目にすることができます。しかしその中でもリマのカテドラルは、南米きっての征服者、フランシスコ・ピサロ自らの手で礎石を置いた、ペルーで最も古いカテドラルです。その日は1535年1月18日、リマ建都の日でもあります。ピサロがペルーへ上陸したのは、黄金の都と噂されていた“インカ帝国”を目指していたとのことです。カテドラル内には、金・銀箔・彫刻の見事な祭壇が16もあるほか、14世紀の宗教画、歴代インカ帝国の肖像画などが飾られています。</p>
+                    <p class="picture"><img src="data/lima-catedral.png" alt="リマ旧市街のカテドラル"></p>
+                </ul>
+                <h4>新市街</h4>
+                <ul class="topnashi">
+                    <li class="list">サン・イシドロ　San Isidro</li>
+                    <p>サン・イシドロは旧市街の南に広がる、古くからのお屋敷町です。現在はペルーの大手企業や銀行が集まるビジネス拠点として発展しています。高級ホテルやレストラン、百貨店も立ち並び、人気の観光地でもあります。特にメトロポリターノのカナバル・イ・モレイラ駅付近とコンキスタドーレス通りにはおしゃれなブティックや人気のレストランが集まっており、夜遅くまでにぎわっています。</p>
+                    <li class="list">ミラフローレス　Miraflores</li>
+                    <p>旧市街のセントロから海岸へ向かうと、サン・イシドロと並ぶ高級住宅地のミラフローレスがあります。人通りが多い町ではありますが、セントロの喧騒とは違う落ち着きをもった町です。1番の繁華街はラルコ通りやその周辺で、ブティック、レストラン、デパート、カフェなどが軒を連ねており、おしゃれな雰囲気があります。また、海水浴ができるビーチや、ディアゴナル通りでは食べ歩きが楽しめるオープンカフェが並び、夕方から夜にかけてはたくさんの若者でにぎわいます。</p>
+                    <p class="picture"><img src="data/lima.jpg" alt="リマの海岸"></p>
+                </ul>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer_contents">
+                <div class="link1">
+                    <p class="f_link"><a class="f_link" href="https://www.perurail.com/" target="_blank">PeruRail.com</a>
+                        <br>photo by Unsplash <br>作成者：K18G4009 井上文花
+                    </p>
+                </div>
+                <div class="link2"><a href="https://unsplash.com/" target="_blank"><img src="data/Unsplash_Logo_Full.png" alt="アンスプラッシュ"></a>
+                </div>
+                <div class="link3"><a href="https://www.arukikata.co.jp/" target="_blank"><img src="https://www.arukikata.co.jp/img/banner_m_a.gif" alt="地球の歩き方" width="230" height="60"></a></div>
+            </div>
+
+        </footer>
+    </div>
+</body>

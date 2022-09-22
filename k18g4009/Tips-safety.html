@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>基本情報</title>
+    <link rel="stylesheet" href="small_screen.css" media="only screen and (min-width: 0px) and (max-width: 900px)">
+    <link rel="stylesheet" href="page.css" media="only screen and (min-width: 900px)">
+
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <script>
+        $(function() {
+            var headerHight = 100;
+            $('a[href^=#]').click(function() {
+                var href = $(this).attr("href");
+                var target = $(href == "#" || href == "" ? 'html' : href);
+                var position = target.offset().top - headerHight;
+                $("html, body").animate({
+                    scrollTop: position
+                }, 550, "swing");
+                return false;
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <img src="data/peru.gif" alt="ペルー国旗">
+            <h1>
+
+                <a href="index.html">ペルー旅行のすすめ</a>
+            </h1>
+
+            <nav class="gnav">
+                <ul>
+                    <li><a href="index.html">TOP</a></li>
+                    <li><a href="general-information.html">基本情報</a></li>
+                    <li class="current">基礎知識</li>
+                    <li><a href="city.html">主な都市</a></li>
+                </ul>
+            </nav>
+
+        </header>
+        <div class="main">
+            <div class="side-menu">
+                <table>
+                    <tr>
+                        <td class="page-topic"><a href="travel-tips.html">基礎知識</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="Tips-geo.html">地理と風土</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="Tips-trafic.html">交通</a></td>
+                    </tr>
+                    <tr>
+                        <td class="current">安全</td>
+                    </tr>
+                    <tr>
+                        <td><a href="Tips-food.html">食事</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="Tips-spanish.html">スペイン語</a></td>
+                    </tr>
+                </table>
+
+            </div>
+            <div class="contents">
+                <h2 class="tipspage">安全</h2>
+                <h3>犯罪に遭遇しやすい場所</h3>
+                <p>治安の悪い地区や通りがあるのは他の南米諸国と同じです。スラム街、駅周辺、暗い路地、観光客の集まる場所などは、スリや泥棒に出くわす確率が高い代表的な場所です。<br>また、町はずれの遺跡など人のいないようなところには暴漢が待ち伏せていることもあります。危険な目に遭わないためには、カメラや時計、指輪など金目のものはつけて歩かないこと、1人で出歩くことは避けることが大切です。</p>
+                <h3>予防接種</h3>
+                <p>ペルーへの入国に予防接種は義務付けられていません。ただしペルーは黄熱病のリスク国に指定されています。標高2,300m以下のジャングルに行く場合は、黄熱病の予防接種を受けていくことが望ましいです（クスコとマチュピチュのみの渡航には不要）。また、南米の黄熱病リスク国（アルゼンチン、パラグアイ、ブラジル、ボリビア、コロンビア、エクアドル、フランス領ギアナ、ベネズエラ、スリナム、ガイアナ）から入国する際も2020年現在、黄熱予防接種証明書（イエローカード）を求められることはありません。しかし、政府の発表は常時変更される可能性があるので、出発前に必ず旅行会社などに確認した方がいいでしょう。</p>
+                <h3>高山病</h3>
+                <ul class="topnashi">
+                    <li class="list">高山病とは?</li>
+                    <p>スペイン語でソロチェ(Soloche)と呼ばれる高山病は、短時間に低地から高地に移動した際に、低気圧・低酸素に体が順応できずに起こる症状です。標高154mのリマから、標高3399mのクスコに飛行機で移動することは、高山病になる可能性はとても高いです。症状には個人差があり、まったく変化を感じない人もいれば、重症化する人もいます。</p>
+                    <li class="list">高山病の症状</li>
+                    <p>高山病の症状は、息切れ・動悸・頭痛や倦怠感・耳鳴り・吐き気・頭部膨張感など、人によって様々です。頭痛を感じる人は多く、特に起床時に強く痛み、次第に弱まる傾向があります。重症化すると肺に水が溜まる高地肺水腫や、脳がむくむ脳浮腫になることもあります。そのような場合は急いで酸素濃度の高い低地に降りなければ死に至ることもあります。</p>
+                    <li class="list">高山病の予防</li>
+                    <p>高山病は到着直後には発症しないことが多いが、安心して動き回ると夜になって発症することがあるので、高地では以下の注意が必要です。
+                        <br>①体が順応する1週間程度は、過度な運動は避けること。到着直後は深呼吸をしながらゆっくり歩くことを心掛けましょう。<br>
+                        ②アルコールの摂取、喫煙は避ける。アルコールは低地で飲むよりも酔いが早く回るので、少量ずつ飲むようにしましょう。<br>
+                        ③低酸素の場所では消化機能が低下するため、食べすぎに注意する。また、食べる際には脂分の多いものを避け、すぐにエネルギーになる炭水化物を摂取するように心掛けましょう。炭酸飲料は腹部の膨張感が増すので避け、コカ茶をたくさん飲むようにすると良いです。
+                    </p>
+                    <li class="list">その他予防法</li>
+                    <p>中級以上のホテルでは酸素ボンベを常備しており、緊急事態の場合は酸素吸入をさせてくれます。ただし、吸い続けるのはよくありません。高山病を予防する内服薬もあります。日本では医師の処方箋が必要な薬をペルーの薬局で買えることもありますが、服用するタイミングを間違えると症状が悪化することもあるので、要注意です。</p>
+                </ul>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer_contents">
+                <div class="link1">
+                    <p class="f_link"><a class="f_link" href="https://www.perurail.com/" target="_blank">PeruRail.com</a>
+                        <br>photo by Unsplash <br>作成者：K18G4009 井上文花
+                    </p>
+                </div>
+                <div class="link2"><a href="https://unsplash.com/" target="_blank"><img src="data/Unsplash_Logo_Full.png" alt="アンスプラッシュ"></a>
+                </div>
+                <div class="link3"><a href="https://www.arukikata.co.jp/" target="_blank"><img src="https://www.arukikata.co.jp/img/banner_m_a.gif" alt="地球の歩き方" width="230" height="60"></a></div>
+            </div>
+
+        </footer>
+    </div>
+</body></html>

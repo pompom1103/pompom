@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>基本情報</title>
+    <link rel="stylesheet" href="small_screen.css" media="only screen and (min-width: 0px) and (max-width: 900px)">
+    <link rel="stylesheet" href="page.css" media="only screen and (min-width: 900px)">
+
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <script>
+        $(function() {
+            var headerHight = 100;
+            $('a[href^=#]').click(function() {
+                var href = $(this).attr("href");
+                var target = $(href == "#" || href == "" ? 'html' : href);
+                var position = target.offset().top - headerHight;
+                $("html, body").animate({
+                    scrollTop: position
+                }, 550, "swing");
+                return false;
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <img src="data/peru.gif" alt="ペルー国旗">
+            <h1>
+
+                <a href="index.html">ペルー旅行のすすめ</a>
+            </h1>
+
+            <nav class="gnav">
+                <ul>
+                    <li><a href="index.html">TOP</a></li>
+                    <li><a href="general-information.html">基本情報</a></li>
+                    <li class="current">基礎知識</li>
+                    <li><a href="city.html">主な都市</a></li>
+                </ul>
+            </nav>
+
+        </header>
+        <div class="main">
+            <div class="side-menu">
+                <table>
+                    <tr>
+                        <td class="page-topic"><a href="travel-tips.html">基礎知識</a></td>
+                    </tr>
+                    <tr>
+                        <td class="current">地理と風土</td>
+                    </tr>
+                    <tr>
+                        <td><a href="Tips-trafic.html">交通</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="Tips-safety.html">安全</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="Tips-food.html">食事</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="Tips-spanish.html">スペイン語</a></td>
+                    </tr>
+                </table>
+
+            </div>
+            <div class="contents">
+                <h2 class="tipspage">地理と風土</h2>
+                <p>ペルーの国土はコスタ（海岸地帯）、シエラ（山岳地帯）、セルバ（森林地帯）の大きく3つの地域に分けることができます。</p>
+                <h3>コスタ（海岸地帯）</h3>
+                <p>ペルーの太平洋側に面した幅30～50km、長さ約3000kmの<span class="important">海岸砂漠地域</span>です。首都リマはこの海岸に開けています。チャラと呼ばれる気候区分に入り、年間を通じてほとんど雨が降りませんが、東のアンデス山脈から流れ出す川が大都市を潤しています。11~4月の夏は毎日晴天が続きますが、逆に冬はガルーア（garúa）という霧が立ち込めて曇天となる日が多くなります。</p>
+                <div class="tips">
+                    <p class="tips-title">海岸砂漠のでき方</p>
+                    <p>海岸砂漠は、中~低緯度地域で、海岸沿いに冷たい寒流が流れているところにできる砂漠です。<br>冷たい寒流が流れているため、海岸付近の空気は冷やされて水蒸気量が減少します。この空気が海からの風によって陸地に流れてくると、加熱されてさらに低湿になり、砂漠を形成します。そして海岸付近ではときどき乾いた霧が発生します。</p>
+                </div>
+                <h3>シエラ（山岳地帯）</h3>
+                <p>標高2500~3500mのケチュアという気候区分に入るのが、ワラス、クスコ、プーノです。ケチュアを超えると標高3500~4500mのスニと呼ばれる不毛地帯になります。標高が高くなるにつれ平地が少なくなり、急な山の斜面に広がる段々畑では、ジャガイモやキヌアなどが栽培されます。標高が高いため、気温は平均して低く、日中は日差しが強いため気温も上がりますが、朝晩はとても冷え込むのが特徴です。スニの上にはコルディエラ・ネグラ（=黒い山脈）があり、さらに一年中雪をかぶったコルディエラ・ブランカ（=白い山脈）のアンデス山脈へと続きます。この2つの山脈の間はブナ地帯と呼ばれる平地になっていて、リャマやアルパカの遊牧が行われています。</p>
+                <p class="img"><img src="data/llama2.jpg" alt="リャマ"></p>
+                <h3>セルバ（森林地帯）</h3>
+                <p>アンデス山脈を越えた東側は気候が一変します。ペルーの国土の約60%を占めるアマゾン熱帯雨林地域です。原生林に覆われ雨が多く、蒸し暑い気候です。平均気温は28℃だが、5~10月の乾季の日中の気温は40℃を超えることも珍しくありません。11~4月の雨季には毎日まとまった雨が降り、高温多湿となります。</p>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer_contents">
+                <div class="link1">
+                    <p class="f_link"><a class="f_link" href="https://www.perurail.com/" target="_blank">PeruRail.com</a>
+                        <br>photo by Unsplash <br>作成者：K18G4009 井上文花
+                    </p>
+                </div>
+                <div class="link2"><a href="https://unsplash.com/" target="_blank"><img src="data/Unsplash_Logo_Full.png" alt="アンスプラッシュ"></a>
+                </div>
+                <div class="link3"><a href="https://www.arukikata.co.jp/" target="_blank"><img src="https://www.arukikata.co.jp/img/banner_m_a.gif" alt="地球の歩き方" width="230" height="60"></a></div>
+            </div>
+
+        </footer>
+    </div>
+</body></html>

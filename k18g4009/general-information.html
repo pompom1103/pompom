@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>基本情報</title>
+    <link rel="stylesheet" href="small_screen.css" media="only screen and (min-width: 0px) and (max-width: 900px)">
+    <link rel="stylesheet" href="page.css" media="only screen and (min-width: 900px)">
+
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <script>
+        $(function() {
+            var headerHight = 100;
+            $('a[href^=#]').click(function() {
+                var href = $(this).attr("href");
+                var target = $(href == "#" || href == "" ? 'html' : href);
+                var position = target.offset().top - headerHight;
+                $("html, body").animate({
+                    scrollTop: position
+                }, 550, "swing");
+                return false;
+            });
+        });
+
+    </script>
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <img src="data/peru.gif" alt="ペルー国旗">
+            <h1>
+
+                <a href="index.html">ペルー旅行のすすめ</a>
+            </h1>
+            <nav class="gnav">
+                <ul>
+                    <li><a href="index.html">TOP</a></li>
+                    <li class="current">基本情報</li>
+                    <li><a href="travel-tips.html">基礎知識</a></li>
+                    <li><a href="city.html">主な都市</a></li>
+                </ul>
+            </nav>
+
+        </header>
+        <div class="main">
+            <div class="side-menu">
+                <table>
+                    <tr>
+                        <td class="page-topic"><a href="general-information.html">ペルーの基本情報</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#flag">国旗</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#name">正式名称</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#area">面積</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#population">人口</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#capital">首都</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#people">民族構成</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#religion">宗教</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#lang">言語</a></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="contents">
+                <h2 id="page-topic" class="topicpage">ペルーの基本情報</h2>
+                <p>ペルー共和国は東京から15,000km、飛行機で丸1日近くかかる場所に位置しており、まさに地球の裏側にある国です。南米大陸の太平洋に面した国で、面積は日本の3.4倍、エクアドル、コロンビア、ブラジル、ボリビア、チリと国境を接しています。南北に長く多様な地勢をもつため、年間を通じてほとんど雨の降らない乾燥した砂漠地帯から、標高6000m級の山々が連なるアンデスの高地、ジャングルに覆われたアマゾン河流域の密林地帯まで、変化に富んだ風土と気候がひとつの国に存在しています。ひとつの国でこれだけ多彩な自然環境をもっているため、地域によって全く異なる景色や文化に触れられることが、この国の大きな魅力です。</p>
+
+                <h3 id="flag">国旗</h3>
+                <p>一般には左右に赤、中央に白の国旗が使われており、中央に紋章のある国旗はペルーの公的機関で使用されています。<br>紋章はビクーニャ、キーナの木、山羊の角からこぼれている金貨が描かれており、この国の豊かな自然と資源を表しています。現在のデザインは、1825年に正式な国旗として定められました。</p>
+                <p class="img"><img src="data/PELU.gif" alt="ペルーの国旗"></p>
+                <h3 id="name">正式名称</h3>
+                <p>ペルー共和国　<br>República del Perú</p>
+                <h3 id="area">面積</h3>
+                <p>128万5,216平方キロメートル（日本の約3.4倍）</p>
+                <h3 id="population">人口</h3>
+                <p>3,282万人（2020年）</p>
+                <h3 id="capital">首都</h3>
+                <p>リマ Lima<br>人口：1,039万人（2018年）
+                </p>
+                <h3 id="people">民族構成</h3>
+                <p>インディヘナ（先住民）45％、メスティソ（先住民とスペイン人の混血）37％、ヨーロッパ系15％、そのほか3％</p>
+                <h3 id="religion">宗教</h3>
+                <p>主にカトリック。先住民の間には伝統的な宗教も信仰されています。</p>
+                <h3 id="lang">言語</h3>
+                <p>主にスペイン語。山岳地域のインディヘナはケチュア語、ティティカカ湖周辺ではアイマラ語も話されています。</p>
+
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer_contents">
+                <div class="link1">
+                    <p class="f_link"><a class="f_link" href="https://www.perurail.com/" target="_blank">PeruRail.com</a>
+                        <br>photo by Unsplash <br>作成者：K18G4009 井上文花
+                    </p>
+                </div>
+                <div class="link2"><a href="https://unsplash.com/" target="_blank"><img src="data/Unsplash_Logo_Full.png" alt="アンスプラッシュ"></a>
+                </div>
+                <div class="link3"><a href="https://www.arukikata.co.jp/" target="_blank"><img src="https://www.arukikata.co.jp/img/banner_m_a.gif" alt="地球の歩き方" width="230" height="60"></a></div>
+            </div>
+
+        </footer>
+    </div>
+</body>
+
+</html>

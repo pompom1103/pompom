@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>主な都市</title>
+    <link rel="stylesheet" href="small_screen.css" media="only screen and (min-width: 0px) and (max-width: 900px)">
+    <link rel="stylesheet" href="page.css" media="only screen and (min-width: 900px)">
+
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <script>
+        $(function() {
+            var headerHight = 100;
+            $('a[href^=#]').click(function() {
+                var href = $(this).attr("href");
+                var target = $(href == "#" || href == "" ? 'html' : href);
+                var position = target.offset().top - headerHight;
+                $("html, body").animate({
+                    scrollTop: position
+                }, 550, "swing");
+                return false;
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <img src="data/peru.gif" alt="ペルー国旗">
+            <h1>
+                <a href="index.html">ペルー旅行のすすめ</a>
+            </h1>
+            <nav class="gnav">
+                <ul>
+                    <li><a href="index.html">TOP</a></li>
+                    <li><a href="general-information.html">基本情報</a></li>
+                    <li><a href="travel-tips.html">基礎知識</a></li>
+                    <li class="current">主な都市</li>
+                </ul>
+            </nav>
+
+        </header>
+        <div class="main">
+            <div class="side-menu">
+                <table>
+                    <tr>
+                        <td class="page-topic"><a href="city.html">ペルーの主な都市</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="City-lima.html">リマ</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="City-cusco.html">クスコ</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="City-nasca.html">ナスカ</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="City-machupicchu.html">マチュピチュ</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="City-puno.html">プーノ</a></td>
+                    </tr>
+                    <tr>
+                        <td class="current">イキトス</td>
+                    </tr>
+
+                </table>
+            </div>
+            <div class="contents">
+
+                <h2 class="citypage">
+                    <span>Iquitos ― 標高約106m</span>
+                    イキトス
+                </h2>
+                <p>“アンデス”のイメージが強いペルーですが、実は国土の60%はアマゾンの熱帯雨林が占めています。イキトスはその熱帯雨林の真っただ中、アマゾン河のほとりにある都市です。1750年にスペイン人宣教師がこの地に移住してきましたが、原住民の強い抵抗に遭い、小さな村から発展しませんでした。しかしその後1890年～1920年にかけて訪れた天然ゴムブームによって大きく発展し、今ではアマゾンへの入り口として訪れる旅行者が絶えません。
+                </p>
+                <p class="map"><iframe src="https://www.google.com/maps/d/u/0/embed?mid=1Fghv7E720xqIRU3_Uk_yu1Ppv7ThK8JJ" width="640" height="480"></iframe></p>
+                <h3>イキトスの行き方</h3>
+                <p>リマから北北東に1300㎞離れたイキトスへは、今のところ空路か船だけが交通手段で陸路はありません。そのため陸の孤島とも呼ばれています。リマからパカルパPucallpaまでバスで行き、パカルパから船で4～5日かけてイキトスへ行くことができます。『陸海空』部族アースのナスDもイキトスまでこの行き方でした。イキトスからコロンビアのレティシア(Leticia)、その隣町でブラジルのタバティンガ(Tabatinga)へは、国境越えの高速船が出ています。</p>
+                <p>イキトスの町はアマゾン河に沿って形成されており、アルマス広場を町の中心として、高級ホテルやレストラン、旅行会社など、観光に必要な施設は徒歩圏内に集まっています。ベレン地区がおもな見どころで、、市場のあるベレン・アルタ地区へはアルマス広場からタクシーで5分ほどです。</p>
+
+                <p class="picture"><img src="data/iquitos.png" alt="アマゾン源流の町、イキトス"></p>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer_contents">
+                <div class="link1">
+                    <p class="f_link"><a class="f_link" href="https://www.perurail.com/" target="_blank">PeruRail.com</a>
+                        <br>photo by Unsplash <br>作成者：K18G4009 井上文花
+                    </p>
+                </div>
+                <div class="link2"><a href="https://unsplash.com/" target="_blank"><img src="data/Unsplash_Logo_Full.png" alt="アンスプラッシュ"></a>
+                </div>
+                <div class="link3"><a href="https://www.arukikata.co.jp/" target="_blank"><img src="https://www.arukikata.co.jp/img/banner_m_a.gif" alt="地球の歩き方" width="230" height="60"></a></div>
+            </div>
+
+        </footer>
+    </div>
+</body>

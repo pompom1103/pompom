@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>基本情報</title>
+    <link rel="stylesheet" href="small_screen.css" media="only screen and (min-width: 0px) and (max-width: 900px)">
+    <link rel="stylesheet" href="page.css" media="only screen and (min-width: 900px)">
+
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <script>
+        $(function() {
+            var headerHight = 100;
+            $('a[href^=#]').click(function() {
+                var href = $(this).attr("href");
+                var target = $(href == "#" || href == "" ? 'html' : href);
+                var position = target.offset().top - headerHight;
+                $("html, body").animate({
+                    scrollTop: position
+                }, 550, "swing");
+                return false;
+            });
+        });
+
+    </script>
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <img src="data/peru.gif" alt="ペルー国旗">
+            <h1>
+
+                <a href="index.html">ペルー旅行のすすめ</a>
+            </h1>
+
+            <nav class="gnav">
+                <ul>
+                    <li><a href="index.html">TOP</a></li>
+                    <li><a href="general-information.html">基本情報</a></li>
+                    <li class="current">基礎知識</li>
+                    <li><a href="city.html">主な都市</a></li>
+                </ul>
+            </nav>
+
+        </header>
+        <div class="main">
+            <div class="side-menu">
+                <table>
+                    <tr>
+                        <td class="page-topic"><a href="travel-tips.html">基礎知識</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="Tips-geo.html">地理と風土</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="Tips-trafic.html">交通</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="Tips-safety.html">安全</a></td>
+                    </tr>
+                    <tr>
+                        <td class="current">食事</td>
+                    </tr>
+                    <tr>
+                        <td><a href="Tips-spanish.html">スペイン語</a></td>
+                    </tr>
+                </table>
+
+            </div>
+            <div class="contents">
+                <h2 class="tipspage">食事</h2>
+                <p>ペルーは水産大国であり、特にリマなどの沿岸の都市では魚介類を使った料理が多くあります。<br>また、アンデスの山岳地帯ではジャガイモや野菜のスープ系のものや、マス料理、クイ（テンジクネズミ）を使った料理があります。肉は鶏肉、牛肉がよく食べられていますが、近年はアルパカの肉を出すレストランもあります。</p>
+                <ul class="topnashi">
+                    <li class="list">セビーチェ Cebiche</li>
+                    <p>セビーチェはペルーを起源とする料理で、ラテンアメリカでよく食べれています。白身魚やタコ、エビ、イカ、貝などの魚介類をレモン汁で締め、トウガラシや玉ねぎであえた、マリネのような料理です。黄色い豆のようなものはチョクロ(Choclo)という粒の大きなペルーのトウモロコシで、オレンジ色の人参のように見えるものはカモーテ(Camote)というペルーのサツマイモです。これらはセビーチェの付け合わせに欠かせません。</p>
+                    <p class="picture"><img src="data/cebiche.png" alt="セビーチェ"></p>
+                    <li class="list">ロモ・サルタード Lomo Saltado</li>
+                    <p>牛肉の細切りと、玉ねぎ、トマト、フライドポテトを炒めたペルーの国民食で、中華料理のような味付けです。中国からの移民がルーツとされています。</p>
+                    <li class="list">アヒ・デ・ガジーナ Ají de gallina</li>
+                    <p>ガジーナ（雌鶏）をほぐしたものと、玉ねぎ、牛乳に浸したパンをアヒ・アマリージョ（黄色い唐辛子）のクリームソースで煮込んだ料理です。ご飯にかけて食べるので、シチューやカレーライスに似ています。</p>
+                    <li class="list">アンティクーチョ　Anticucho</li>
+                    <p>牛の心臓（ハツ）を串に刺したものを香辛料の効いたたれに漬け込んで焼いた料理で、ペルーが起源とされています。アンティクーチョも付け合わせにチョクロやカモーテがついてくることが多いです。</p>
+                    <li class="list">コカ茶　Mate de Coca</li>
+                    <p>インカの時代から飲まれていたコカ茶は、コカインの原料となるコカの葉を乾燥させたものにお湯を注いだものです。高山病に効くとされています。</p>
+                    <li class="list">ピスコサワー　Pisco Sour</li>
+                    <p>ピスコとは葡萄から作られた蒸留酒のことで、このピスコに卵白とレモン、砂糖を加えたカクテルがピスコサワーです。</p>
+                    <p class="picture"><img src="data/piscosour.png" alt="ピスコサワー"></p>
+                    <li class="list">インカコーラ　INCA KOLA</li>
+                    <p>インカコーラはペルーのJosé R. Lindley社が発売しているコーラで、ペルーを代表する炭酸飲料です。甘味が強くクセになる味だそうです。</p>
+                    <p class="picture"><img src="data/Incakola.jpg" alt="インカコーラ"></p>
+                </ul>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer_contents">
+                <div class="link1">
+                    <p class="f_link"><a class="f_link" href="https://www.perurail.com/" target="_blank">PeruRail.com</a>
+                        <br>photo by Unsplash <br>作成者：K18G4009 井上文花
+                    </p>
+                </div>
+                <div class="link2"><a href="https://unsplash.com/" target="_blank"><img src="data/Unsplash_Logo_Full.png" alt="アンスプラッシュ"></a>
+                </div>
+                <div class="link3"><a href="https://www.arukikata.co.jp/" target="_blank"><img src="https://www.arukikata.co.jp/img/banner_m_a.gif" alt="地球の歩き方" width="230" height="60"></a></div>
+            </div>
+
+        </footer>
+    </div>
+</body>
+
+</html>
